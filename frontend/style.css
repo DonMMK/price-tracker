@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#carEntry,
+#visualization {
+    width: 90%;
+    /* Adjusted width for better fit on smaller screens */
+    max-width: 500px;
+    /* Limiting maximum width for readability */
+    margin: auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    margin-bottom: 16px;
+    padding: 8px;
+    font-size: 16px;
+    /* Increased font size for better readability on mobile */
+}
+
+button {
+    padding: 10px;
+    /* Increased button padding for easier tapping on mobile */
+    cursor: pointer;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 600px) {
+    input,
+    button {
+        width: 100%;
+        /* Make input fields and buttons full width on mobile */
+    }
+    label {
+        font-size: 16px;
+        /* Increased font size for labels on mobile */
+    }
+    button {
+        margin-bottom: 10px;
+        /* Added margin below buttons on mobile */
+    }
+}

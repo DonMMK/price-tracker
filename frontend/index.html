@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Entry Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="carEntry">
+        <h2>Enter Car Details</h2>
+        <form id="carForm">
+            <label for="odometer">Odometer:</label>
+            <input type="number" id="odometer" required>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" required>
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" required>
+
+            <label for="color">Color:</label>
+            <input type="text" id="color">
+
+            <label for="range">Range:</label>
+            <input type="text" id="range">
+
+            <label for="advertised">Advertised:</label>
+            <input type="text" id="advertised">
+
+            <label for="modifications">Modifications:</label>
+            <input type="text" id="modifications">
+
+            <button type="button" onclick="submitCar()">Submit Car</button>
+            <button type="button" onclick="skipToVisualization()">Skip to Visualization</button>
+        </form>
+    </div>
+
+    <div id="visualization" style="display:none;">
+        <h2>Car Visualization Dashboard</h2>
+        <div id="plot"></div>
+    </div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
